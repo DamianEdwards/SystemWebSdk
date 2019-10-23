@@ -26,18 +26,18 @@ Enable a reasonable (unblocking) experience for customers to use the new SDK-bas
 ## Strawman desired experience 
 Create a package-based SDK, `Microsoft.NET.Sdk.SystemWeb`, that can be configured in the project file and would be resolved directly from NuGet (i.e. NuGet package SDK resolution, already supported), e.g.
 
-    ``` xml
-	<Project Sdk="Microsoft.NET.Sdk.SystemWeb">
-	  <PropertyGroup>
-	    <TargetFramework>net472</TargetFramework>
-	  </PropertyGroup>
-	  
-	  <ItemGroup>
-	    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
-	    <PackageReference Include="Microsoft.AspNet.Web.Optimization" Version="1.1.3" />
-	    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
-	    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
-	    <PackageReference Include="WebGrease" Version="1.6.0" />
-	  </ItemGroup>
-	</Project>
-   ```
+``` xml
+<Project Sdk="Microsoft.NET.Sdk.SystemWeb">
+    <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    </PropertyGroup>
+    
+    <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNet.Web.Optimization" Version="1.1.3" />
+    <PackageReference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="WebGrease" Version="1.6.0" />
+    </ItemGroup>
+</Project>
+```
