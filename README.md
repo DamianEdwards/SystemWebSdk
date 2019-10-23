@@ -5,14 +5,13 @@
 Enable a reasonable (unblocking) experience for customers to use the new SDK-based project system and files for their System.Web-based ASP.NET projects (Web Forms, MVC, and Web API). This will provide a stepping-stone for customers looking to migrate from .NET Framework to .NET Core that provides immediate benefits (e.g. simpler project file, new NuGet experience, better interoperability with .NET Standard class libraries, etc.).
 
 ## Scenarios to consider enabling
-- Editing pages/views (ASPX and CSHTML)
 - Managing dependencies (NuGet, BCL)
 - Build (output should be identical to old csproj)
 - Launch & debug (use the new launch experience, launchSettings.json, IIS Express, IIS, etc.)
 - Binding redirects
 - Publish (local, Azure)
   - Web.config transforms
-- File nesting in Solution Explorer
+- Editing pages/views (CSHTML and ASPX)
 - Default globs
 - Templates (project & item)
 - Localization (RESX files)
