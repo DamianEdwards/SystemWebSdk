@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <AssemblyName>$(ProjectName)</AssemblyName>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
     <OutputType>Library</OutputType>
     <OutputPath>bin</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -9,7 +9,7 @@
     <!-- TODO: Consider solution platform here? -->
     <RunCommand Condition="'$(MSBuildExtensionsPath)' != ''">$(MSBuildExtensionsPath)\..\IIS Express\iisexpress.exe</RunCommand>
     <RunCommand Condition="'$(MSBuildExtensionsPath64)' != ''">$(MSBuildExtensionsPath64)\..\IIS Express\iisexpress.exe</RunCommand>
-    <RunArguments>/config:$(SolutionDir)\.vs\$(SolutionName)\config\applicationhost.config /site:$(ProjectName) /apppool:Clr4IntegratedAppPool</RunArguments>
+    <RunArguments>/config:$(SolutionDir)\.vs\$(SolutionName)\config\applicationhost.config /site:$(MSBuildProjectName) /apppool:Clr4IntegratedAppPool</RunArguments>
   </PropertyGroup>
   
   <ItemGroup>
