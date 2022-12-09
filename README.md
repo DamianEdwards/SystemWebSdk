@@ -1,5 +1,8 @@
+# THIS REPO IS ARCHIVED
+Please check out the [ASP.NET Core Incrementation migration](https://learn.microsoft.com/en-us/aspnet/core/migration/inc/overview?view=aspnetcore-7.0) documentation for details about a Microsoft-supported approach for migrating ASP.NET projects to ASP.NET Core.
+
 # SystemWebSdk
- Exploration of using new .NET SDK-style projects with ASP.NET (System.Web) projects
+Exploration of using new .NET SDK-style projects with ASP.NET (System.Web) projects
 
 ## Goal
 Enable a reasonable (unblocking) experience for customers to use the new SDK-based project system and files for their System.Web-based ASP.NET projects (Web Forms, MVC, and Web API). This will provide a stepping-stone for customers looking to migrate from .NET Framework to .NET Core that provides immediate benefits (e.g. simpler project file, new NuGet experience, better interoperability with .NET Standard class libraries, etc.).
